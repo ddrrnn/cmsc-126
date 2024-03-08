@@ -1,0 +1,373 @@
+body {
+  margin: 0;
+  background-color:#fafafa;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  background-color: #f7f4ed;
+  padding: 1.3rem 3rem 1.4rem 3rem;
+  margin: 0;
+  border: 0;
+  font-size: 3.125rem;
+  text-transform: uppercase;
+  color:#210d05;
+}
+
+hr {
+  background: none;
+  border: 0 none;
+  height: 0;
+  margin: 0;
+}
+
+#welcome {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #f7f4ed;
+  margin-top: -0.5rem;
+  margin-bottom: -0.3rem;
+  padding-bottom: 1rem;
+  text-shadow: 1px 2px 13px rgba(44, 28, 7, 0.53);
+  font-size: 1.0625rem;
+  color:#210d05;
+}
+
+.navBar {
+  background-color: #57230a;
+  text-align: center;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 1.25rem 0;
+  -webkit-box-shadow: 0px 12px 14px 0px rgba(152,152,152,0.42); 
+  box-shadow: 0px 12px 14px 0px rgba(152,152,152,0.42);
+  z-index: 2;
+}
+
+.navBar a {
+  position: relative;
+  margin: 0 6.25rem;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  font-size: 1.25rem;
+}
+
+.navBar a:hover {
+  color: #B19081;
+  text-decoration: underline;
+}
+
+.imgBanner {
+  margin-top: -1.25rem;
+  margin-bottom: -1.25rem;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+a[href="#bottomPage"] {
+  position: absolute;
+  bottom: 4.5rem;
+  right: 0.625rem;
+  background-color: #7a5a4b;
+  padding: 0.625rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s;
+  z-index: 3;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-box-shadow: -2px -2px 14px 12px rgba(152,152,152,0.42);
+  box-shadow: -2px -2px 14px 12px  rgba(152, 152, 152, 0.42);
+  font-size: 1rem;
+}
+
+a[href="#bottomPage"]:hover {
+  background-color: #B19081;
+}
+
+.coffee {
+  background-color: #fafafa;
+  text-align: center;
+  margin: auto;
+  font-size: 1.25rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.coffee:nth-of-type(2) {
+  background-color: white;
+  margin-top: 0;
+  padding: 1.3rem 12rem;
+}
+
+.coffee h2 {
+  margin-top: 4rem;
+  padding: 0;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 2.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+ol {
+  line-height: 1.4;
+  margin-top: 1.25rem;
+  margin-bottom: 3.75rem;
+  text-align: left;
+  font-size: 1.25rem;
+}
+
+.coffee li {
+  margin-bottom: 2rem;
+}
+
+.coffee .definition {
+  padding: 0.6rem 8rem;
+  margin: auto;
+  line-height: 1.4;
+}
+
+
+.coffee .emphasis {
+  font-weight: bold;
+  color: #57230a;
+  font-size: 1.5rem;
+}
+
+
+.coffee img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block; 
+  margin: 0 auto;
+}
+
+a[href="order.html"]{
+  text-decoration: none;
+}
+
+#orderCoffee {
+  bottom: 2.5rem;
+  right: 0.625rem;
+  background-color: #57230a;
+  padding: 0.625rem;
+  color:#f7f4ed;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 0.6rem;
+  transition: 0.2s;
+  font-family: Helvetica, Arial, sans-serif;
+  display: block; 
+  margin: 1.4rem auto 1rem auto;
+  border-color: #FBF9F5;
+  width: 18rem;
+  
+}
+
+#orderCoffee:hover {
+  width: 20rem;
+  transform: scale(1.07);
+  cursor: pointer; 
+  -webkit-box-shadow: 0px 12px 14px 0px rgba(152,152,152,0.42); 
+  box-shadow: 0px 12px 14px 0px rgba(152,152,152,0.42);
+}
+
+a[href="#title"] {
+  float: right;
+  background-color: #7a5a4b;
+  padding: 0.625rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s;
+  z-index: 3;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-box-shadow: -2px -2px 14px 12px rgba(152, 152, 152, 0.42);
+  box-shadow: -2px -2px 14px 12px rgba(152, 152, 152, 0.42);
+  margin-top: -0.5rem;
+  margin-right: 0.625rem;
+  font-size: 1rem;
+}
+
+a[href="#title"]:hover {
+  background-color: #B19081;
+}
+
+footer {
+  background-color: #57230a;
+  text-align: center;
+  padding: 1.4rem;
+  margin-top: 4rem;
+  color: #fafafa;
+}
+
+footer #title {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 2.125rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  color: #fafafa;
+}
+
+footer .contacts {
+  text-align: center;
+  line-height: 1.3rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+footer p {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 2.3rem; 
+  color: #fafafa9f;
+
+}
+
+#tagline{
+  text-align: center;
+  font-size: 1.6rem;
+  color:#3f190a;
+}
+
+.coffee {
+  text-align: center;
+  margin: auto;
+}
+
+.coffeeTitle {
+  background-color: #6a3f2a;
+  color: white;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.coffeeImg {
+  display: block;
+  max-width: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  max-height: 100px;
+  object-fit: cover;
+  padding: 0;
+}
+
+
+.label {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.coffee form {
+  max-width: 400px;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+label {
+  font-weight: bold;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  display: inline;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+select {
+  height: 2.5rem;
+}
+
+input[type="submit"] {
+  background-color: #57230a;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+  background-color: #B19081;
+}
+
+.coffee img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 4rem;
+}
+
+.coffee ul li {
+  display: inline-block; 
+  margin-right: 3rem; 
+}
+
+iframe{
+  width: 40rem;
+  height: 20rem;
+}
+
+.coffee table {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto 6rem auto;
+  overflow-x: auto;
+  padding-bottom: 3rem;
+
+}
+
+
+.coffee th, .coffee td {
+  padding: 8px;
+  min-width: 100px;
+}
+
+.coffee .teamMember {
+  display: block;
+  max-width: 400px;
+  min-width: 400px;
+  min-height: 400px;
+  max-height: 400px;
+  object-fit: cover;
+  
+}
+
+
+.coffee:nth-of-type(6) img{
+  float: left;
+  max-height: 30rem;
+  margin-left: 9rem;
+  margin-right: 1.4rem;
+}
