@@ -11,9 +11,9 @@ hr {
     border: none; 
     border-radius: 5px;
     background: #FA4454;
-background: -moz-radial-gradient(center, #FA4454 0%, #AA2E39 50%, #4E151A 100%);
-background: -webkit-radial-gradient(center, #FA4454 0%, #AA2E39 50%, #4E151A 100%);
-background: radial-gradient(ellipse at center, #FA4454 0%, #AA2E39 50%, #4E151A 100%);
+    background: -moz-radial-gradient(center, #FA4454 0%, #AA2E39 50%, #4E151A 100%);
+    background: -webkit-radial-gradient(center, #FA4454 0%, #AA2E39 50%, #4E151A 100%);
+    background: radial-gradient(ellipse at center, #FA4454 0%, #AA2E39 50%, #4E151A 100%);
 }
 
 #valorantLogo {
@@ -33,7 +33,7 @@ background: radial-gradient(ellipse at center, #FA4454 0%, #AA2E39 50%, #4E151A 
 }
 
 input {
-    width: calc(70% - 0.5rem); 
+    width: 70%;
     padding: 0.7rem;
     margin-right: 0.5rem;
     box-sizing: border-box;

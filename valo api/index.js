@@ -4,7 +4,7 @@ async function fetchData() {
         const response = await fetch(`https://valorant-api.com/v1/agents?isPlayableCharacter=true`);
         
         if (!response.ok) {
-            throw new Error("Failed to fetch agent data");
+            throw new Error("error in fetching agent data");
         }
 
         const agentData = await response.json();
@@ -12,13 +12,14 @@ async function fetchData() {
 
         const agent = agents.find(agent => agent.displayName.toLowerCase() === agentName);
         if (!agent) {
+            alert("Agent not found.");
             throw new Error("agent not found");
         }
 
         const agentID = agent.uuid;
         const agentResponse = await fetch(`https://valorant-api.com/v1/agents/${agentID}`);
         if (!agentResponse.ok) {
-            throw new Error("failed to fetch");
+            throw new Error("error in fetching data");
         }
 
         const data = await agentResponse.json();
@@ -29,7 +30,6 @@ async function fetchData() {
         const agentBg = data.data.background;
         const bgElement = document.getElementById("agentBg");
         bgElement.src = agentBg;
-
         
         const agentNameDisplay = data.data.displayName;
         const nameDisplay = document.getElementById("agentNameDisplay");
@@ -50,20 +50,20 @@ async function fetchData() {
         const abilitiesContainer = document.getElementById("agentAbilities");
         abilitiesContainer.innerHTML = "";
         data.data.abilities.forEach(ability => {
-        const abilityItem = document.createElement("p");
-        abilityItem.innerHTML = `<b>${ability.displayName}</b>: ${ability.description}`;
-        abilitiesContainer.appendChild(abilityItem);
-        
-        const abilityIcon = document.createElement("img");
-        abilityIcon.src = ability.displayIcon;
-        abilityIcon.style.width = "25px"; 
-        abilityIcon.style.height = "25px"; 
-        abilitiesContainer.appendChild(abilityIcon);
+            const abilityItem = document.createElement("p");
+            abilityItem.innerHTML = `<b>${ability.displayName}</b>: ${ability.description}`;
+            abilitiesContainer.appendChild(abilityItem);
+            
+            const abilityIcon = document.createElement("img");
+            abilityIcon.src = ability.displayIcon;
+            abilityIcon.style.width = "25px"; 
+            abilityIcon.style.height = "25px"; 
+            abilitiesContainer.appendChild(abilityIcon);
         
         });
 
         const agentInfo= document.getElementById("agentInfo");
-        agentInfo.style.display = "flex";
+        agentInfo.style.display = "block";
 
     }
     
