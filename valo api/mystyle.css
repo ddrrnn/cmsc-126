@@ -1,0 +1,151 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    margin: 0;
+    overflow-x: hidden;
+    height: 100vh; 
+    color: white;
+}
+hr {
+    height: 4px; 
+    border: none; 
+    border-radius: 5px;
+    background: #FA4454;
+background: -moz-radial-gradient(center, #FA4454 0%, #AA2E39 50%, #4E151A 100%);
+background: -webkit-radial-gradient(center, #FA4454 0%, #AA2E39 50%, #4E151A 100%);
+background: radial-gradient(ellipse at center, #FA4454 0%, #AA2E39 50%, #4E151A 100%);
+}
+
+#valorantLogo {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+#search {
+    position: absolute;
+    top: 20%;
+    left: 55%; 
+    transform: translateX(-50%);
+    width: 50%;
+}
+
+input {
+    width: calc(70% - 0.5rem); 
+    padding: 0.7rem;
+    margin-right: 0.5rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+
+#agentName {
+    border-radius: 15px;
+    padding: 0.7rem;
+    margin-right: 0.8rem;
+}
+
+button {
+    background-color: #fa4454;
+    color: rgb(234, 232, 232);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #8a252e;
+    color: rgb(116, 71, 71);
+}
+
+#agentCard{
+    margin-top: 15%;
+    border: 2px solid white;
+    padding-bottom: 45%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#agentInfo {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin-top: 20px;
+    box-sizing: border-box; 
+}
+
+#agentSprite {
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    z-index: 2; 
+    margin-top: 6%;
+}
+
+#agentBg {
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    opacity: 30%;
+    z-index: 1; 
+    margin-top: 6%;
+}
+
+#agentInfoName{
+    text-align: center;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 0;
+}
+
+#agentInfoRoleAbilities{
+    text-align: left;
+    position: absolute;
+    top: 300%;
+    right: 0;
+    width: 55%;
+    margin-top: 6rem;
+    padding-bottom: 9rem;
+}
+
+#agentRole{
+    font-weight: bold;
+}
+
+#agentRoleDetail{
+    padding-left: 2rem;
+}
+
+#roleImg{
+    width: 25px;
+    height: 25px;
+    margin-left: 2rem;
+}
+
+#agentAbilities{
+    padding-left: 2rem;
+}
+
+.agentrole{
+    padding-left: 2rem;
+}
+
+#agentNameDisplay {
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    font-size: 2rem;
+    color: white;
+}
+

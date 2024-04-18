@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant API</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <img src="valorantlogo.png" alt="valorant logo" id="valorantLogo">
+    <div id="search">
+        <input type="text" id="agentName" placeholder="Enter agent">
+        <button onclick="fetchData()">Search</button><br>
+    </div>
+
+    <div id="agentInfo" style="display: none">
+        <img src="" alt="agent sprite" id="agentSprite">
+        <img src="" id="agentBg">
+        <div id="agentInfoName">
+            <h2 id="agentNameDisplay"></h2>
+            <hr>
+        </div>
+        
+        <div id="agentInfoRoleAbilities">
+            <p>Role:<span id="agentRole"> Initiator </span></p>
+            <p  id="agentRoleDetail">Initiators challenge angles by setting up their team to enter contested ground and push defenders away.</p>
+            <img src="" id="roleImg">
+            <br>
+            <p>Abilities:</p>
+            <div id="agentAbilities">
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
